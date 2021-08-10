@@ -3,14 +3,16 @@ import './App.css';
 import {useEffect} from 'react';
 
 
+const baseurl = process.env.REACT_APP_BASEURL;
+console.log("baseurl", baseurl)
 function App() {
 
   useEffect(() => {
-    fetch("https://warm-basin-01996.herokuapp.com/users")
+    fetch(`${baseurl}/users`)
     .then(res => res.json()).then(result=> console.log("heroku result", result))
   }, [])
 
-  
+
   return (
     <div className="App">
       <header className="App-header">
