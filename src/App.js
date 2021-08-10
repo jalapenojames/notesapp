@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import {useEffect} from 'react';
+
 
 function App() {
+
+  useEffect(() => {
+    fetch("https://warm-basin-01996.herokuapp.com/users")
+    .then(res => res.json()).then(result=> console.log("heroku result", result))
+  }, [])
+
+  
   return (
     <div className="App">
       <header className="App-header">
