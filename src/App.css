@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.noteTitle {
+  /* a:link {color: $Hand3};
+  font-weight: 300;
+  font-family: $secondary-font;
+  a:link {text-decoration:none; background-color:transparent; color: #FAF5F2;};
+  a:visited {text-decoration:none;background-color:transparent; color:#FAF5F2;};
+  a:hover {text-decoration:none;background-color:transparent; color:#FAF5F2;};
+  a:active {text-decoration:none;background-color:transparent; color:#FAF5F2;};
+  color: $Hand3; */
+  color: black;
+}
+
+a:hover, .noteTitle {
+  color: black;
+}
+

@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router} from "react-router-dom"
-// import MainContainer from "./containers/MainContainer";
+import MainContainer from "./containers/MainContainer";
 import {useEffect} from 'react';
 
 
@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <MainContainer/> */}test
+        <MainContainer/>
       </div>      
     </Router>
   );
