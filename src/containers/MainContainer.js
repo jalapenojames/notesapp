@@ -4,7 +4,7 @@ import Home from '../components/Home'
 import HomeOG from '../components/HomeOG'
 import Login from '../components/Login'
 import SlateEditor from '../components/SlateEditor'
-// import MakeMap from '../components/MakeMap'
+import MakeMap from '../components/MakeMap'
 import PaperCanvas from '../components/PaperCanvas'
 
 const baseurl = process.env.REACT_APP_BASEURL;
@@ -162,7 +162,7 @@ export default class MainContainer extends Component {
                     <Route path='/home'><Home notesTitle={this.state.notesTitle} notesContent={this.state.notesContent} note={this.state.currentEditor} testClick={this.testClick} handleClickNew={this.handleClickNew} redirect={this.state.redirect} testNotes={this.state.testNotes} updateWho={this.updateWho} updateIndex={this.updateIndex} deleteCurrentNote={this.deleteCurrentNote} notesAssoc={this.state.notesAssoc} users={this.state.users} currentUser={this.state.currentUser} updateUserNotes={this.updateUserNotes} filteredPanel={this.state.filteredPanel} updateFilteredPanel={this.updateFilteredPanel}/></Route>
                     <Route path='/homeOG'><HomeOG note={this.state.currentEditor} testClick={this.testClick} testNotes={this.state.testNotes} redirect={this.state.redirect} updateWho={this.updateWho} updateLayer={this.updateLayer} layer={this.state.layer} filtered={this.state.filtered} updateFilter={this.updateFilter}/></Route>
                     <Route path='/editor'><SlateEditor testNotes={this.state.testNotes} note={this.state.currentEditor} index={this.state.index} updateRedirect={this.updateRedirect} updateNotes={this.updateNotes} who={this.state.who} notesTitle={this.state.notesTitle} notesContent={this.state.notesContent}/></Route>
-                    {/* <Route path='/makemap'><MakeMap filteredPanel={this.state.filteredPanel} testNotes={this.state.testNotes} notesTitle={this.state.notesTitle} layerMap={this.state.layerMap} updateLayerMap={this.updateLayerMap} root={this.state.root} updateRoot={this.updateRoot} updateRootModified={this.updateRootModified}/></Route> */}
+                    <Route path='/makemap'><MakeMap filteredPanel={this.state.filteredPanel} testNotes={this.state.testNotes} notesTitle={this.state.notesTitle} layerMap={this.state.layerMap} updateLayerMap={this.updateLayerMap} root={this.state.root} updateRoot={this.updateRoot} updateRootModified={this.updateRootModified}/></Route>
                     <Route path='/canvas'><PaperCanvas/></Route>
                 </Switch>
             </div>
